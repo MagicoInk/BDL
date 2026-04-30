@@ -23,11 +23,11 @@ export function SignatureInvestment() {
         >
           <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-fw-red">Inversión</p>
           <h2 className="font-display text-3xl font-bold leading-tight text-fw-white md:text-4xl lg:text-5xl">
-            Cada camada tiene su propia historia y su propio valor.
+            Los precios cambian según la camada.
           </h2>
           <p className="mt-6 max-w-md text-sm leading-relaxed text-fw-muted">
-            Los rangos son orientativos: el precio final depende del color, el sexo y la disponibilidad. Siempre con
-            conversación honesta, sin presión y con tiempo para que decidas con la cabeza fría y el corazón contento.
+            La tabla es orientativa: al final cuenta el color, el sexo y si todavía hay cachorros. Platicamos el total
+            por WhatsApp o en la visita, con calma y sin obligarte a decidir en el momento.
           </p>
         </motion.div>
 

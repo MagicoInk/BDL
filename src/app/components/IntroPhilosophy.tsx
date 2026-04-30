@@ -4,7 +4,7 @@ const stats = [
   { n: '27+', l: 'Años de trayectoria' },
   { n: '500+', l: 'Familias felices' },
   { n: '15+', l: 'Campeones' },
-  { n: '100%', l: 'Compromiso' },
+  { n: '2', l: 'Años garantía salud' },
 ];
 
 export function IntroPhilosophy() {
@@ -21,7 +21,7 @@ export function IntroPhilosophy() {
             viewport={{ once: true }}
             className="font-display text-3xl font-bold leading-[1.15] tracking-tight md:text-4xl lg:text-[2.75rem] lg:leading-[1.12]"
           >
-            Un hogar donde nacen compañeros de verdad.
+            Un hogar donde nacen buenos compañeros.
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -36,9 +36,9 @@ export function IntroPhilosophy() {
               duermen y el juego cuando despiertan.
             </p>
             <p>
-              Elegimos cruces con cabeza y corazón: pruebas de salud, papeles claros y mucha paciencia para que cada
-              familia entienda qué necesita su futuro frenchie. No vendemos “unidades”: acompañamos una vida que va a
-              dormir en tu sala.
+              Elegimos cruces con criterio: pruebas de salud, papeles claros y tiempo para platicar con cada familia
+              qué implica llevarse un frenchie. Nos importa que llegue sano y que sepas a qué atenerte en los primeros
+              meses.
             </p>
           </motion.div>
         </div>

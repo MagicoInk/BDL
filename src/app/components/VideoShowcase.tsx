@@ -29,8 +29,8 @@ export function VideoShowcase() {
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-fw-red">En vídeo</p>
           <h2 className="font-display text-3xl font-bold text-fw-white md:text-4xl">Momentos cotidianos</h2>
           <p className="mt-4 text-sm leading-relaxed text-fw-muted md:text-base">
-            Estos clips son de muestra. Cuando tengas las tuyas, aquí irán las caras reales de tu camada y de quienes
-            las cuidan cada mañana.
+            Vídeos cortos para que veas cómo se mueven y cómo están de ánimo. Si más adelante quieres subir los tuyos,
+            lo vemos contigo.
           </p>
         </motion.div>
 

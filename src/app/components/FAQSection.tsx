@@ -5,12 +5,12 @@ const faqs = [
   {
     question: '¿Cuál es el precio de sus cachorros?',
     answer:
-      'Depende de línea, color y sexo. Rangos típicos entre $80,000 y $150,000 MXN en exóticos premium. Cotización personalizada por WhatsApp.',
+      'Depende de línea, color y sexo. Suele andar entre unos $80,000 y $150,000 MXN en los más buscados. Te damos cifra exacta por WhatsApp según lo que haya disponible.',
   },
   {
     question: '¿Qué incluye la compra?',
     answer:
-      'Pedigree FCI, certificado de salud, vacunas, desparasitación, microchip, contrato, kit de bienvenida y acceso a comunidad privada.',
+      'Pedigree FCI, certificado de salud, vacunas, desparasitación, microchip, contrato, kit de bienvenida y acceso al grupo de dueños.',
   },
   {
     question: '¿Puedo visitar antes de comprar?',

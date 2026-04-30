@@ -32,7 +32,7 @@ export function Experience() {
               Nuestro hogar
             </p>
             <h2 className="mb-8 font-serif text-4xl font-normal leading-[1.12] tracking-tight text-studio-ink md:text-5xl lg:text-6xl">
-              Más de dos décadas de excelencia
+              Más de dos décadas aquí
             </h2>
             <div className="mb-10 h-px w-14 bg-studio-accent" />
             <p className="mb-14 text-lg font-light leading-relaxed text-studio-muted">

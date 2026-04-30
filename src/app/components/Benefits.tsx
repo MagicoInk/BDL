@@ -5,33 +5,33 @@ import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 const benefits = [
   {
     icon: Trophy,
-    title: 'Líneas Genéticas de Élite',
-    description: 'Genotipos y fenotipos excepcionales para lograr frenchies compactos, con excelente temperamento y bonito físico.',
+    title: 'Líneas con respaldo',
+    description: 'Buscamos buen cuerpo y buen carácter. Los padres se eligen con calma y con pruebas cuando toca.',
   },
   {
     icon: Heart,
-    title: 'Crianza en Ambiente Familiar',
-    description: 'Nuestros cachorros crecen en un entorno honesto, transparente y responsable lleno de amor.',
+    title: 'Crianza en casa',
+    description: 'Los cachorros conviven con nosotros: ruido de cocina, pisadas, caricias. No los dejamos encerrados sin ver a nadie.',
   },
   {
     icon: Shield,
-    title: 'Salud Garantizada',
-    description: 'Cachorros inteligentes, simpáticos, amorosos y protectores. Increíbles compañeros ideales para tu familia.',
+    title: 'Salud y papeles',
+    description: 'Vacunas, desparasitación y revisión antes de salir. Te entregamos lo que necesitas para el veterinario de tu zona.',
   },
   {
     icon: Star,
-    title: 'Colores Tradicionales y Exóticos',
-    description: 'Ofrecemos tanto bulldogs franceses tradicionales como exóticos de colores únicos desde hace años.',
+    title: 'Variedad de colores',
+    description: 'Hay tonos clásicos y otros más raros. Lo que haya en cada camada te lo decimos tal cual, sin inventar.',
   },
   {
     icon: Users,
-    title: '+27 Años de Experiencia',
-    description: 'Criamos bulldog inglés y francés de calidad desde 1999. Nuestra experiencia es tu garantía.',
+    title: 'Más de 27 años',
+    description: 'Llevamos desde 1999 con bulldog inglés y francés. Si algo no nos cuadra, preferimos no vender.',
   },
   {
     icon: Sparkles,
-    title: 'Cachorros Únicos',
-    description: 'Cada cachorro es especial, seleccionado con los más altos estándares de calidad y bienestar.',
+    title: 'Cada camada es distinta',
+    description: 'No sacamos docenas iguales. Lo que hay en el mes, eso es lo que mostramos en fotos y vídeo.',
   },
 ];
 
@@ -86,8 +86,8 @@ export function Benefits() {
             </div>
             
             <h2 className="text-5xl md:text-6xl font-black text-black mb-6 tracking-tighter uppercase leading-tight">
-              Excelencia<br/>
-              <span className="text-[#0d7a3a]">Garantizada</span>
+              Crianza<br/>
+              <span className="text-[#0d7a3a]">con calma</span>
             </h2>
             
             <p className="text-xl text-neutral-700 mb-12 font-medium leading-relaxed">
@@ -111,8 +111,8 @@ export function Benefits() {
                   <Shield className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-black mb-2 uppercase">Garantía Total</h3>
-                  <p className="text-neutral-600 font-medium">Salud y bienestar garantizados</p>
+                  <h3 className="text-xl font-black text-black mb-2 uppercase">Salud por escrito</h3>
+                  <p className="text-neutral-600 font-medium">Contrato y garantía que puedes leer con tiempo</p>
                 </div>
               </div>
 
@@ -121,8 +121,8 @@ export function Benefits() {
                   <Heart className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-black mb-2 uppercase">Ambiente Familiar</h3>
-                  <p className="text-neutral-600 font-medium">Crianza con amor y dedicación</p>
+                  <h3 className="text-xl font-black text-black mb-2 uppercase">En la misma casa</h3>
+                  <p className="text-neutral-600 font-medium">Duermen donde los olemos y los escuchamos</p>
                 </div>
               </div>
             </div>

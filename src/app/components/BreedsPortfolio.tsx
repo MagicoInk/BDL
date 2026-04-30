@@ -17,7 +17,7 @@ const lineCards: Record<number, Card[]> = {
   ],
   1: [
     { title: 'Merle con todo en regla', desc: 'Patrón estable y pruebas de salud y ADN que puedes revisar sin prisa.' },
-    { title: 'Lilac merle', desc: 'Muy pocos cupos; reservamos solo cuando hay match real con la familia.' },
+    { title: 'Lilac merle', desc: 'Muy pocos cupos; apartamos solo cuando encajamos bien con la familia.' },
     { title: 'Perla exótica', desc: 'Entrevista previa: queremos conocerte antes de apartar.' },
     { title: 'Merle compacto', desc: 'Cachorros de tamaño equilibrado y seguimiento cercano semana a semana.' },
     { title: 'Arlequín', desc: 'Manto llamativo, siempre bajo supervisión veterinaria y descanso suficiente.' },

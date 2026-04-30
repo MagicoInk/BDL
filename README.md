@@ -1,6 +1,6 @@
-# Landing Page para Cachorros
+# Bulldog Lovers — sitio web
 
-Proyecto **Vite + React + Tailwind CSS v4** (Bulldog Lovers, estilo FourthWall).
+Sitio **Vite + React + Tailwind CSS v4** para Bulldog Lovers México.
 
 ## Desarrollo
 
@@ -26,6 +26,3 @@ npm run preview
 
 `vercel.json` incluye rewrites SPA por si más adelante añades rutas con React Router. Los assets de `/assets/*` se sirven con normalidad.
 
----
-
-Diseño original en Figma: [Landing Page para Cachorros](https://www.figma.com/design/JiXtpBbVFA3Gx1Ck1YnX2K/Landing-Page-para-Cachorros).

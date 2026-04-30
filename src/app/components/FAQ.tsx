@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     question: '¿Qué garantías ofrecen con los cachorros?',
-    answer: 'Todos nuestros cachorros incluyen: certificado veterinario completo, vacunas al día, desparasitación, contrato de garantía legal, asesoría post-venta por 6 meses, kit de bienvenida premium y garantía de salud genética. Trabajamos con transparencia total.',
+    answer: 'Todos nuestros cachorros incluyen: certificado veterinario completo, vacunas al día, desparasitación, contrato de garantía legal, asesoría post-venta por 6 meses, kit de bienvenida y garantía de salud genética. Te decimos qué trae cada cosa antes de apartar.',
   },
   {
     question: '¿Tienen cachorros exóticos y tradicionales?',

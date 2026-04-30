@@ -16,7 +16,7 @@ export function FinalCTA() {
           viewport={{ once: true }}
           className="font-display text-3xl font-bold leading-[1.15] tracking-tight text-fw-white md:text-5xl lg:text-6xl"
         >
-          Cuidado premium para tu mejor amigo.
+          ¿Quieres platicar con nosotros?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -24,8 +24,8 @@ export function FinalCTA() {
           viewport={{ once: true }}
           className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-fw-muted md:text-base"
         >
-          Agenda una llamada o una visita con calma. Te explicamos tiempos reales, cuidados del cachorro y lo que
-          incluye tu compra, sin presión: como cuando invitas a alguien a conocer tu casa.
+          Mándanos un WhatsApp o pide una visita con cita. Te decimos qué cachorros hay, cuándo estarían listos y qué
+          trae incluido el precio, sin meterte prisa.
         </motion.p>
         <motion.a
           href="https://wa.me/5215527294584?text=Hola,%20quiero%20agendar%20con%20Bulldog%20Lovers"

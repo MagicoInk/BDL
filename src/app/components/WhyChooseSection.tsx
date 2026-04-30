@@ -10,7 +10,7 @@ const pillars = [
   },
   {
     title: 'Te contamos todo',
-    text: 'Padres visibles, citas para visitar sin prisa y papeles desde el primer día. Sin letras chiquitas ni promesas vacías.',
+    text: 'Puedes ver a los padres, agendar visita con tiempo y revisar papeles desde el inicio. Lo importante va por escrito.',
   },
   {
     title: 'Te acompañamos después',

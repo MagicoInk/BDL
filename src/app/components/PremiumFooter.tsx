@@ -31,8 +31,8 @@ export function PremiumFooter() {
             Bulldog<span className="text-fw-red">Lovers</span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-fw-muted">
-            Un hogar dedicado al bulldog francés: líneas cuidadas, salud de verdad y un trato cercano desde el primer
-            mensaje hasta que tu cachorro duerme en tu sala.
+            Criamos bulldog francés con tiempo y limpieza. Si nos escribes, te contestamos; cuando te llevas al cachorro,
+            el trato no se corta ahí.
           </p>
         </div>
 

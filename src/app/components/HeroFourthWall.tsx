@@ -51,8 +51,8 @@ export function HeroFourthWall() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mt-8 max-w-lg text-sm font-light leading-relaxed text-fw-fog md:text-base"
           >
-            Líneas europeas, papeles en regla y un acompañamiento de verdad. Aquí cada camada crece en un hogar
-            tranquilo, limpio y lleno de cuidados hasta el día en que llega a la tuya.
+            Líneas europeas, papeles en regla y seguimiento cuando lo necesites. Cada camada crece en un hogar
+            tranquilo y limpio hasta el día en que te lo llevas.
           </motion.p>
         </div>
 
@@ -65,7 +65,7 @@ export function HeroFourthWall() {
           >
             <p className="font-display text-sm font-bold text-fw-red">#VidaConPatas</p>
             <p className="mt-2 max-w-xs text-xs leading-relaxed text-fw-muted">
-              Un espacio familiar donde la salud, el cariño y el orden se notan desde el primer minuto.
+              Salud, cariño y orden: eso es lo que buscamos todos los días.
             </p>
           </motion.div>
 
@@ -95,7 +95,7 @@ export function HeroFourthWall() {
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
               <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-fw-red">Destacado</p>
-              <p className="truncate font-display text-lg font-bold text-fw-white">Camada premium</p>
+              <p className="truncate font-display text-lg font-bold text-fw-white">Próxima camada</p>
               <span className="mt-1 text-xs font-medium text-fw-red underline-offset-2 hover:underline">
                 Ver cachorros →
               </span>

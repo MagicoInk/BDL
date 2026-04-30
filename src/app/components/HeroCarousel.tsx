@@ -14,7 +14,7 @@ const slides = [
     type: 'image',
     url: frenchieByIndex(2, 1920),
     title: 'Cachorros exóticos muy especiales',
-    subtitle: 'Sangre internacional bien documentada: te mostramos todo con la puerta abierta y sin rodeos.',
+    subtitle: 'Sangre internacional con papeles en orden. Si vienes, te enseñamos lo que haga falta.',
   },
   {
     type: 'image',

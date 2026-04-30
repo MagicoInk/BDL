@@ -6,7 +6,7 @@ const items = [
   {
     title: 'Luna — blue',
     quote:
-      'Genética impecable y seguimiento real. Dos años después siguen respondiendo cada duda.',
+      'Nos mandaron fotos cada semana. A los dos años todavía les escribo por la comida y me contestan al día.',
     name: 'María González',
     place: 'México',
     img: frenchieByIndex(2, 900),
@@ -14,7 +14,7 @@ const items = [
   },
   {
     title: 'Max — lilac',
-    quote: 'Tercer bulldog con ellos. La diferencia con otros criadores es abismal.',
+    quote: 'Es el tercer perro que sacamos aquí. Se nota que conocen a sus animales y no andan con vueltas.',
     name: 'Carlos Rodríguez',
     place: 'Monterrey',
     img: frenchieByIndex(4, 900),
@@ -22,7 +22,7 @@ const items = [
   },
   {
     title: 'Thor — merle',
-    quote: 'Transparencia total: padres, papeles y entrega impecable.',
+    quote: 'Vimos a los papás, revisamos papeles en la mesa y la entrega fue sin correr. Así da gusto.',
     name: 'Andrea Martínez',
     place: 'Guadalajara',
     img: frenchieByIndex(6, 900),
@@ -30,7 +30,7 @@ const items = [
   },
   {
     title: 'Nala — isabella',
-    quote: 'El contrato y la garantía nos dieron tranquilidad desde el día uno.',
+    quote: 'El contrato estaba claro y la garantía nos quitó el miedo de primerizos con un cachorro caro.',
     name: 'Lucía Herrera',
     place: 'Querétaro',
     img: frenchieByIndex(8, 900),
@@ -48,7 +48,7 @@ export function TestimonialsSection() {
           viewport={{ once: true }}
           className="mb-14 max-w-xl font-display text-3xl font-bold leading-tight text-fw-white md:text-4xl lg:text-5xl"
         >
-          Lo que dicen quienes ya viven la experiencia.
+          Comentarios de familias que ya se fueron a casa con su cachorro.
         </motion.h2>
 
         <div className="grid gap-6 md:grid-cols-2">

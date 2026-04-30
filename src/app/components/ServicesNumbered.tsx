@@ -16,13 +16,13 @@ const rows = [
   },
   {
     n: '03',
-    title: 'Experiencia de entrega',
-    desc: 'Socialización, kit de bienvenida, seguro inicial y línea directa de asesoría de por vida.',
+    title: 'Entrega y primeros días',
+    desc: 'Socialización en casa, kit de bienvenida, seguro inicial y un número al que puedes escribir después.',
     href: 'https://wa.me/5215527294584?text=Quiero%20conocer%20el%20proceso%20de%20entrega',
   },
 ];
 
-/** Misma plantilla 12 columnas que cada fila de servicio (número | texto | imágenes). */
+/** Grid 12 columnas: número | texto | imágenes (misma estructura en header y filas). */
 const gridTemplate = 'grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-x-8 lg:gap-y-0';
 
 export function ServicesNumbered() {
