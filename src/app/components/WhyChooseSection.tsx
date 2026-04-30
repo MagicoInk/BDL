@@ -1,29 +1,24 @@
 import { useRef } from 'react';
 import { motion } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { frenchieGallery } from '@/app/media/frenchBulldogMedia';
 
 const pillars = [
   {
-    title: 'Diseño consciente',
-    text: 'Cada cruce planificado: salud, morfología y bienestar antes que tendencias.',
+    title: 'Hogar cuidado',
+    text: 'Ambiente familiar, limpio y ordenado. Las mamás y los cachorros viven con espacio, descanso y rutinas de higiene que se notan.',
   },
   {
-    title: 'Proceso transparente',
-    text: 'Padres visibles, instalaciones con cita y documentos desde el día uno.',
+    title: 'Te contamos todo',
+    text: 'Padres visibles, citas para visitar sin prisa y papeles desde el primer día. Sin letras chiquitas ni promesas vacías.',
   },
   {
-    title: 'Detalle obsesivo',
-    text: 'Seguimiento veterinario, nutrición y comunidad privada de dueños.',
+    title: 'Te acompañamos después',
+    text: 'Seguimiento veterinario, tips de alimentación y un grupo de dueños que se apoyan. No desaparecemos cuando te llevas a tu frenchie.',
   },
 ];
 
-const strip = [
-  'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800&q=80',
-  'https://images.unsplash.com/photo-1613295878076-c1edd28d4bfe?w=800&q=80',
-  'https://images.unsplash.com/photo-1583512603806-077998240c7a?w=800&q=80',
-  'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=800&q=80',
-  'https://images.unsplash.com/photo-1544966951-9dc3611c1558?w=800&q=80',
-];
+const strip = frenchieGallery.slice(0, 8);
 
 export function WhyChooseSection() {
   const scroller = useRef<HTMLDivElement>(null);
@@ -55,7 +50,7 @@ export function WhyChooseSection() {
               type="button"
               aria-label="Anterior"
               onClick={() => scrollBy(-1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-gold hover:text-fw-gold"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
             >
               <ChevronLeft size={20} />
             </button>
@@ -63,7 +58,7 @@ export function WhyChooseSection() {
               type="button"
               aria-label="Siguiente"
               onClick={() => scrollBy(1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-gold hover:text-fw-gold"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
             >
               <ChevronRight size={20} />
             </button>
@@ -72,9 +67,9 @@ export function WhyChooseSection() {
             ref={scroller}
             className="flex flex-1 gap-4 overflow-x-auto pb-2 scrollbar-hide [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
-            {strip.map((src) => (
+            {strip.map((src, i) => (
               <div
-                key={src}
+                key={`${i}-${src.slice(-24)}`}
                 className="h-48 w-72 shrink-0 rounded-2xl bg-cover bg-center shadow-lg md:h-56 md:w-80"
                 style={{ backgroundImage: `url(${src})` }}
               />

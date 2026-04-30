@@ -1,23 +1,21 @@
 import { motion } from 'motion/react';
+import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 
 const lines = [
   {
     name: 'Blue Line',
-    image: 'https://images.unsplash.com/photo-1583512603806-077998240c7a?w=800&q=80',
-    description: 'Genética europea exclusiva. Campeones internacionales.',
-    features: ['ADN certificado', 'Pedigree FCI', 'Sin consanguinidad'],
+    description: 'Sangre europea con trayectoria en exposición y salud documentada.',
+    features: ['ADN certificado', 'Pedigree FCI', 'Cruces sin consanguinidad'],
   },
   {
     name: 'Lilac & Isabella',
-    image: 'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=800&q=80',
-    description: 'Los colores más raros y codiciados del mundo.',
-    features: ['Genética dilución doble', 'Ojos claros', 'Ultra premium'],
+    description: 'Tonos suaves y poco comunes, siempre con tiempo y espacio en casa.',
+    features: ['Dilución doble clara', 'Ojos sanos', 'Cuidado diario'],
   },
   {
     name: 'Merle Exotic',
-    image: 'https://images.unsplash.com/photo-1544966951-9dc3611c1558?w=800&q=80',
-    description: 'Patrones únicos imposibles de replicar.',
-    features: ['Salud garantizada', 'Patrón perfecto', 'Linaje comprobado'],
+    description: 'Mantos que enamoran, con prioridad absoluta al bienestar del cachorro.',
+    features: ['Salud revisada', 'Patrón estable', 'Papeles en orden'],
   },
 ];
 
@@ -32,15 +30,15 @@ export function GeneticLines() {
           className="mb-20 max-w-3xl"
         >
           <p className="mb-4 text-[0.65rem] font-semibold uppercase tracking-[0.35em] text-studio-muted">
-            Portafolio genético
+            Nuestras líneas
           </p>
           <h2 className="mb-6 font-serif text-4xl font-normal tracking-tight text-studio-ink md:text-6xl md:leading-[1.1]">
-            Líneas de élite
+            Sangre cuidada, familia feliz
           </h2>
           <div className="mb-8 h-px w-16 bg-studio-accent" />
           <p className="text-lg font-light leading-relaxed text-studio-muted">
-            Importamos las mejores líneas de Europa y Estados Unidos. Cada cachorro proviene de campeones
-            mundiales con salud certificada.
+            Elegimos padres en Europa y Estados Unidos con historial claro. Cada cachorro nace en un ambiente limpio,
+            con revisiones veterinarias y el cariño que merece antes de llegar a tu hogar.
           </p>
         </motion.div>
 
@@ -56,7 +54,7 @@ export function GeneticLines() {
             >
               <div className="relative mb-8 aspect-[3/4] overflow-hidden border border-studio-line bg-studio-canvas">
                 <img
-                  src={line.image}
+                  src={frenchieByIndex(idx + 5, 1000)}
                   alt={line.name}
                   className="h-full w-full object-cover transition-transform duration-[1.1s] ease-out group-hover:scale-[1.03]"
                 />

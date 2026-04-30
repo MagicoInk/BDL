@@ -1,31 +1,32 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 
 const slides = [
   {
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=1920&q=80',
-    title: 'Bulldog francés de línea exclusiva',
-    subtitle: 'Veintisiete años de excelencia genética y crianza responsable.',
+    url: frenchieByIndex(0, 1920),
+    title: 'Bulldog francés con sangre cuidada',
+    subtitle: 'Más de veintisiete años criando con cariño, orden en casa y papeles que respaldan cada camada.',
   },
   {
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1613295878076-c1edd28d4bfe?w=1920&q=80',
-    title: 'Cachorros exóticos premium',
-    subtitle: 'Genética internacional de élite, documentación y transparencia.',
+    url: frenchieByIndex(2, 1920),
+    title: 'Cachorros exóticos muy especiales',
+    subtitle: 'Sangre internacional bien documentada: te mostramos todo con la puerta abierta y sin rodeos.',
   },
   {
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1920&q=80',
+    url: frenchieByIndex(4, 1920),
     title: 'Blue, lilac y merle',
-    subtitle: 'Colores codiciados con pruebas genéticas y pedigree FCI.',
+    subtitle: 'Colores poco comunes, siempre con pruebas de salud y pedigree FCI que puedes revisar.',
   },
   {
     type: 'image',
-    url: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?w=1920&q=80',
+    url: frenchieByIndex(6, 1920),
     title: 'Garantía y acompañamiento',
-    subtitle: 'Tu inversión protegida con contrato y seguimiento de por vida.',
+    subtitle: 'Contrato claro y una línea abierta para dudas el día que haga falta: no te dejamos solo.',
   },
 ];
 
@@ -57,10 +58,10 @@ export function HeroCarousel() {
       className="relative min-h-[100dvh] w-full overflow-hidden bg-studio-canvas lg:min-h-0 lg:h-[min(100dvh,920px)]"
     >
       <div className="grid min-h-[100dvh] lg:min-h-0 lg:h-[min(100dvh,920px)] lg:grid-cols-[minmax(0,42%)_1fr]">
-        {/* Panel editorial — inspiración estudio arquitectura / interiores */}
+        {/* Panel editorial — tono hogar, calma y confianza */}
         <div className="order-2 flex flex-col justify-center border-studio-line px-6 py-14 pt-28 sm:px-10 lg:order-1 lg:border-r lg:px-12 lg:py-20 lg:pt-24 xl:pl-16">
           <p className="mb-6 text-[0.7rem] font-semibold uppercase tracking-[0.38em] text-studio-muted">
-            Criadero exclusivo · Ciudad de México
+            Exclusivo · México
           </p>
           <div className="mb-8 h-px w-12 bg-studio-accent" aria-hidden />
           <AnimatePresence mode="wait">

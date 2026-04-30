@@ -5,6 +5,7 @@ import { Menu, X, Instagram, Facebook } from 'lucide-react';
 const nav = [
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#servicios', label: 'Servicios' },
+  { href: '#videos', label: 'Vídeos' },
   { href: '#lineas', label: 'Líneas' },
   { href: '#testimonios', label: 'Testimonios' },
   { href: '#faq', label: 'FAQ' },
@@ -29,7 +30,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-6 px-5 lg:px-10">
         <a href="#hero" className="font-display text-lg font-bold tracking-tight text-fw-white lg:text-xl">
-          Bulldog<span className="text-fw-gold">Lovers</span>
+          Bulldog<span className="text-fw-red">Lovers</span>
         </a>
 
         <nav className="hidden flex-1 justify-center gap-8 lg:flex xl:gap-10">
@@ -44,12 +45,23 @@ export function SiteHeader() {
           ))}
         </nav>
 
+        <motion.a
+          href="https://wa.me/5215527294584?text=Hola,%20Bulldog%20Lovers"
+          target="_blank"
+          rel="noopener noreferrer"
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className="hidden border-2 border-fw-pure-white px-5 py-2.5 text-[10px] font-bold uppercase tracking-[0.2em] text-fw-pure-white transition-colors hover:border-fw-red hover:bg-fw-red lg:inline-flex"
+        >
+          Reservar
+        </motion.a>
+
         <div className="hidden items-center gap-3 lg:flex">
           <a
             href="https://instagram.com/bulldogloversmexico"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-gold hover:text-fw-gold"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
             aria-label="Instagram"
           >
             <Instagram size={18} />
@@ -58,7 +70,7 @@ export function SiteHeader() {
             href="https://facebook.com/bulldogloversmexico"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-gold hover:text-fw-gold"
+            className="flex h-10 w-10 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
             aria-label="Facebook"
           >
             <Facebook size={18} />

@@ -29,7 +29,7 @@ const guarantees = [
   {
     icon: Award,
     title: '27 Años de Respaldo',
-    description: 'Desde 1999 criando bulldogs de élite. Nuestra trayectoria nos avala.',
+    description: 'Desde 1999 criando con mimo y constancia. Nuestra trayectoria se ve en cada familia que regresa.',
   },
 ];
 

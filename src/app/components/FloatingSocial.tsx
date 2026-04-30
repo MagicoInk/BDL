@@ -12,7 +12,7 @@ export function FloatingSocial() {
       transition={{ delay: 1 }}
       whileHover={{ scale: 1.06 }}
       whileTap={{ scale: 0.95 }}
-      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border border-fw-border bg-fw-surface/90 text-[#7bc87a] shadow-2xl backdrop-blur-md hover:border-[#7bc87a]/50"
+      className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full border-2 border-fw-pure-white/30 bg-fw-surface/95 text-[#7bc87a] shadow-2xl ring-2 ring-fw-red/40 backdrop-blur-md hover:border-fw-red/60"
       aria-label="WhatsApp"
     >
       <MessageCircle size={28} strokeWidth={1.5} />

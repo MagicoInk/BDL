@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { CheckCircle2 } from 'lucide-react';
 
 const stats = [
-  { number: '27', label: 'Años de experiencia', sublabel: 'Criando bulldogs de élite' },
+  { number: '27', label: 'Años de experiencia', sublabel: 'Bulldogs con mimo y orden' },
   { number: '500+', label: 'Familias felices', sublabel: 'México y Latinoamérica' },
   { number: '100%', label: 'Satisfacción', sublabel: 'Garantía y acompañamiento' },
   { number: '15+', label: 'Campeones', sublabel: 'Exposiciones internacionales' },
@@ -29,15 +29,15 @@ export function Experience() {
             transition={{ duration: 0.75 }}
           >
             <p className="mb-4 text-[0.65rem] font-semibold uppercase tracking-[0.35em] text-studio-muted">
-              El estudio
+              Nuestro hogar
             </p>
             <h2 className="mb-8 font-serif text-4xl font-normal leading-[1.12] tracking-tight text-studio-ink md:text-5xl lg:text-6xl">
               Más de dos décadas de excelencia
             </h2>
             <div className="mb-10 h-px w-14 bg-studio-accent" />
             <p className="mb-14 text-lg font-light leading-relaxed text-studio-muted">
-              Desde 1998, Bulldog Lovers México ha sido referente en crianza responsable de bulldogs franceses de
-              líneas exclusivas. Pasión, rigor y transparencia en cada camada.
+              Desde 1998, Bulldog Lovers México es un lugar donde la crianza responsable se siente: pasillos limpios,
+              tiempo para cada cachorro y conversaciones honestas con cada familia.
             </p>
 
             <div className="grid grid-cols-2 gap-x-8 gap-y-10">

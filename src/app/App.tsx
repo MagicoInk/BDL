@@ -2,6 +2,7 @@ import { SiteHeader } from './components/SiteHeader';
 import { HeroFourthWall } from './components/HeroFourthWall';
 import { IntroPhilosophy } from './components/IntroPhilosophy';
 import { FeaturedStudioStrip } from './components/FeaturedStudioStrip';
+import { VideoShowcase } from './components/VideoShowcase';
 import { ServicesNumbered } from './components/ServicesNumbered';
 import { SignatureInvestment } from './components/SignatureInvestment';
 import { WhyChooseSection } from './components/WhyChooseSection';
@@ -20,6 +21,7 @@ export default function App() {
       <HeroFourthWall />
       <IntroPhilosophy />
       <FeaturedStudioStrip />
+      <VideoShowcase />
       <ServicesNumbered />
       <SignatureInvestment />
       <WhyChooseSection />

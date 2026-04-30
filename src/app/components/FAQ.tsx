@@ -4,7 +4,7 @@ import { useState } from 'react';
 const faqs = [
   {
     question: '¿Por qué Bulldog Lovers es diferente a otros criadores?',
-    answer: 'Tenemos más de 27 años de experiencia desde 1999, criando bulldogs franceses e ingleses de calidad en un ambiente familiar, honesto y transparente. Nuestras líneas genéticas son excepcionales con fenotipos y genotipos de élite. Cada cachorro recibe amor, atención veterinaria profesional y socialización desde el nacimiento.',
+    answer: 'Tenemos más de 27 años desde 1999, criando bulldogs franceses e ingleses en un ambiente familiar, limpio y honesto. Nuestras líneas están documentadas y los padres pasan por revisiones de salud. Cada cachorro recibe cariño, atención veterinaria y socialización suave desde que nace.',
   },
   {
     question: '¿Qué garantías ofrecen con los cachorros?',

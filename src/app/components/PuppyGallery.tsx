@@ -1,5 +1,6 @@
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { Check, X } from 'lucide-react';
+import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 
 const puppies = [
   {
@@ -8,7 +9,7 @@ const puppies = [
     color: 'Blue & Tan',
     age: '8 semanas',
     price: '$48,000',
-    image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=800',
+    image: frenchieByIndex(0, 900),
     available: true,
     featured: true,
   },
@@ -18,7 +19,7 @@ const puppies = [
     color: 'Lilac Fawn',
     age: '10 semanas',
     price: '$45,000',
-    image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=800',
+    image: frenchieByIndex(2, 900),
     available: true,
     featured: true,
   },
@@ -28,7 +29,7 @@ const puppies = [
     color: 'Merle',
     age: '12 semanas',
     price: '$42,000',
-    image: 'https://images.unsplash.com/photo-1583511666407-5f06533f2113?w=800',
+    image: frenchieByIndex(4, 900),
     available: false,
     featured: false,
   },
@@ -38,7 +39,7 @@ const puppies = [
     color: 'Chocolate',
     age: '9 semanas',
     price: '$38,000',
-    image: 'https://images.unsplash.com/photo-1583511655826-05700d52f4d9?w=800',
+    image: frenchieByIndex(6, 900),
     available: false,
     featured: false,
   },

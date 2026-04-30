@@ -1,15 +1,25 @@
 import { motion } from 'motion/react';
 import { ChevronDown } from 'lucide-react';
-
-const HERO_IMG =
-  'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=2400&q=85';
+import { frenchie, frenchieVideos } from '@/app/media/frenchBulldogMedia';
 
 export function HeroFourthWall() {
   return (
     <section id="hero" className="relative min-h-[100dvh] overflow-hidden">
+      <div className="pointer-events-none absolute inset-y-0 left-0 z-[5] w-1 bg-fw-red lg:w-1.5" aria-hidden />
+      <video
+        className="absolute inset-0 h-full w-full object-cover opacity-[0.35]"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster={frenchie.hero}
+        aria-hidden
+      >
+        <source src={frenchieVideos.portrait} type="video/mp4" />
+      </video>
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${HERO_IMG})` }}
+        style={{ backgroundImage: `url(${frenchie.hero})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-fw-bg/90 via-fw-bg/55 to-fw-bg/95" />
       <div className="absolute inset-0 bg-emerald-950/25 mix-blend-multiply" />
@@ -20,20 +30,20 @@ export function HeroFourthWall() {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-4 text-[11px] font-semibold uppercase tracking-[0.35em] text-fw-gold"
+            className="mb-4 text-[11px] font-semibold uppercase tracking-[0.35em] text-fw-red"
           >
-            Criadero exclusivo · CDMX
+            Exclusivo · México
           </motion.p>
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.05 }}
-            className="font-display text-[13vw] font-extrabold leading-[0.88] tracking-[-0.04em] text-white/25 sm:text-[11vw] md:text-[9vw] lg:text-[7.5rem] xl:text-[8.5rem]"
-            style={{ WebkitTextStroke: '1px rgba(255,255,255,0.12)' }}
+            className="font-display text-[13vw] font-extrabold leading-[0.88] tracking-[-0.04em] text-white/40 sm:text-[11vw] md:text-[9vw] lg:text-[7.5rem] xl:text-[8.5rem]"
+            style={{ WebkitTextStroke: '1px rgba(255,255,255,0.2)' }}
           >
             BULLDOG
             <br />
-            <span className="text-white/35">LOVERS</span>
+            <span className="text-fw-red/80">LOVERS</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
@@ -41,8 +51,8 @@ export function HeroFourthWall() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="mt-8 max-w-lg text-sm font-light leading-relaxed text-fw-fog md:text-base"
           >
-            Líneas europeas, documentación FCI y acompañamiento de por vida. Cada camada pensada como un proyecto
-            único.
+            Líneas europeas, papeles en regla y un acompañamiento de verdad. Aquí cada camada crece en un hogar
+            tranquilo, limpio y lleno de cuidados hasta el día en que llega a la tuya.
           </motion.p>
         </div>
 
@@ -53,9 +63,9 @@ export function HeroFourthWall() {
             transition={{ delay: 0.5 }}
             className="lg:justify-self-start"
           >
-            <p className="font-display text-sm font-bold text-fw-gold">#VidaConPatas</p>
+            <p className="font-display text-sm font-bold text-fw-red">#VidaConPatas</p>
             <p className="mt-2 max-w-xs text-xs leading-relaxed text-fw-muted">
-              Inspiración, salud y diseño de experiencias para tu familia.
+              Un espacio familiar donde la salud, el cariño y el orden se notan desde el primer minuto.
             </p>
           </motion.div>
 
@@ -67,7 +77,7 @@ export function HeroFourthWall() {
             className="flex flex-col items-center gap-2 justify-self-center text-fw-muted"
           >
             <span className="text-[10px] font-semibold uppercase tracking-[0.3em]">Scroll</span>
-            <span className="flex h-11 w-11 items-center justify-center rounded-full border border-fw-border bg-fw-surface/60 backdrop-blur">
+            <span className="flex h-11 w-11 items-center justify-center rounded-full border-2 border-white/40 bg-fw-surface/50 text-fw-pure-white backdrop-blur">
               <ChevronDown className="animate-bounce" size={18} />
             </span>
           </motion.a>
@@ -77,19 +87,16 @@ export function HeroFourthWall() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.55 }}
-            className="flex gap-4 rounded-2xl border border-fw-border bg-fw-surface/80 p-4 shadow-2xl backdrop-blur-md lg:max-w-sm lg:justify-self-end"
+            className="flex gap-4 rounded-2xl border-2 border-white/25 bg-fw-surface/85 p-4 shadow-2xl backdrop-blur-md lg:max-w-sm lg:justify-self-end"
           >
             <div
               className="h-20 w-24 shrink-0 rounded-xl bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  'url(https://images.unsplash.com/photo-1613295878076-c1edd28d4bfe?w=400&q=80)',
-              }}
+              style={{ backgroundImage: `url(${frenchie.heroCard})` }}
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
-              <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-fw-gold">Destacado</p>
+              <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-fw-red">Destacado</p>
               <p className="truncate font-display text-lg font-bold text-fw-white">Camada premium</p>
-              <span className="mt-1 text-xs font-medium text-fw-gold underline-offset-2 hover:underline">
+              <span className="mt-1 text-xs font-medium text-fw-red underline-offset-2 hover:underline">
                 Ver cachorros →
               </span>
             </div>

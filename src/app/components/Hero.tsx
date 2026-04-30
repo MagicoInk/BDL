@@ -1,13 +1,9 @@
 import { ArrowRight, Heart, Award, Shield, Play, ChevronLeft, ChevronRight, Phone } from 'lucide-react';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
 import { useState, useEffect } from 'react';
+import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 
-const galleryImages = [
-  'https://images.unsplash.com/photo-1680189708723-ea3b9c3c9918?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBidWxsZG9nJTIwcHVwcHklMjBjbG9zZSUyMHBvcnRyYWl0fGVufDF8fHx8MTc3MDYxNjExOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  'https://images.unsplash.com/photo-1746647396708-607eea988270?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBidWxsZG9nJTIwcHVwcHklMjBzaXR0aW5nJTIwd2hpdGUlMjBiYWNrZ3JvdW5kfGVufDF8fHx8MTc3MDYxNjExOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  'https://images.unsplash.com/photo-1749369258918-982fbb4610f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBidWxsZG9nJTIwcHVwcHklMjBwbGF5aW5nJTIwY3JlYW0lMjBjb2xvcnxlbnwxfHx8fDE3NzA2MTYxMTh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-  'https://images.unsplash.com/photo-1664474205071-82d0b93bdca1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBidWxsZG9nJTIwcHVwcHklMjBicm93biUyMGJyaW5kbGV8ZW58MXx8fHwxNzcwNjE2MTE5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-];
+const galleryImages = [frenchieByIndex(0, 1200), frenchieByIndex(3, 1200), frenchieByIndex(5, 1200), frenchieByIndex(7, 1200)];
 
 export function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);

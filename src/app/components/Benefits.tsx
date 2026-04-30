@@ -1,5 +1,6 @@
 import { Shield, Heart, Trophy, Star, Users, Sparkles } from 'lucide-react';
 import { ImageWithFallback } from '@/app/components/figma/ImageWithFallback';
+import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 
 const benefits = [
   {
@@ -50,8 +51,8 @@ export function Benefits() {
           <div className="relative">
             <div className="relative h-[600px] overflow-hidden">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1630438994394-3deff7a591bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmVuY2glMjBidWxsZG9nJTIwZmFtaWx5JTIwaG9tZXxlbnwxfHx8fDE3NzA1MTcyODV8MA&ixlib=rb-4.1.0&q=80&w=1080"
-                alt="French Bulldog Family"
+                src={frenchieByIndex(10, 1400)}
+                alt="Familia con bulldog francés"
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
@@ -90,7 +91,8 @@ export function Benefits() {
             </h2>
             
             <p className="text-xl text-neutral-700 mb-12 font-medium leading-relaxed">
-              Más de dos décadas criando bulldogs franceses de élite con estándares incomparables de calidad y profesionalismo.
+              Más de dos décadas criando bulldogs franceses en un hogar ordenado, con calidad que se nota en cada
+              visita y en cada mensaje que te respondemos.
             </p>
 
             <div className="space-y-6">
@@ -99,8 +101,8 @@ export function Benefits() {
                   <Trophy className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-black text-black mb-2 uppercase">Líneas de Élite</h3>
-                  <p className="text-neutral-600 font-medium">Genética excepcional certificada</p>
+                  <h3 className="text-xl font-black text-black mb-2 uppercase">Líneas con respaldo</h3>
+                  <p className="text-neutral-600 font-medium">Genética clara y documentada</p>
                 </div>
               </div>
 

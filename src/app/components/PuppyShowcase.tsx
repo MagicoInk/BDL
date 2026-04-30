@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Heart } from 'lucide-react';
+import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 
 const puppies = [
   {
@@ -7,7 +8,6 @@ const puppies = [
     color: 'Blue Solid',
     gender: 'Macho',
     status: 'Disponible',
-    image: 'https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600&q=80',
     price: 'Inversión premium',
   },
   {
@@ -15,7 +15,6 @@ const puppies = [
     color: 'Lilac Fawn',
     gender: 'Hembra',
     status: 'Reservada',
-    image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&q=80',
     price: 'Inversión premium',
   },
   {
@@ -23,7 +22,6 @@ const puppies = [
     color: 'Blue Merle',
     gender: 'Macho',
     status: 'Disponible',
-    image: 'https://images.unsplash.com/photo-1534361960057-19889db9621e?w=600&q=80',
     price: 'Inversión premium',
   },
   {
@@ -31,7 +29,6 @@ const puppies = [
     color: 'Isabella Tan',
     gender: 'Hembra',
     status: 'Disponible',
-    image: 'https://images.unsplash.com/photo-1583512603806-077998240c7a?w=600&q=80',
     price: 'Inversión premium',
   },
   {
@@ -39,7 +36,6 @@ const puppies = [
     color: 'Platinum',
     gender: 'Macho',
     status: 'Lista de espera',
-    image: 'https://images.unsplash.com/photo-1614027164847-1b28cfe1df60?w=600&q=80',
     price: 'Inversión premium',
   },
   {
@@ -47,7 +43,6 @@ const puppies = [
     color: 'Lilac Merle',
     gender: 'Hembra',
     status: 'Próximamente',
-    image: 'https://images.unsplash.com/photo-1544966951-9dc3611c1558?w=600&q=80',
     price: 'Inversión premium',
   },
 ];
@@ -92,7 +87,7 @@ export function PuppyShowcase() {
             >
               <div className="relative aspect-square overflow-hidden bg-studio-canvas">
                 <img
-                  src={puppy.image}
+                  src={frenchieByIndex(idx + 18, 800)}
                   alt={puppy.name}
                   className="h-full w-full object-cover transition-transform duration-[1s] group-hover:scale-[1.04]"
                 />

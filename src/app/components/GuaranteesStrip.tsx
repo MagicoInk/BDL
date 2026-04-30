@@ -21,7 +21,7 @@ export function GuaranteesStrip() {
             transition={{ delay: i * 0.05 }}
             className="flex items-center gap-3 rounded-xl border border-fw-border bg-fw-surface/50 px-4 py-4"
           >
-            <Icon className="shrink-0 text-fw-gold" size={22} strokeWidth={1.25} />
+            <Icon className="shrink-0 text-fw-red" size={22} strokeWidth={1.25} />
             <span className="text-xs font-semibold uppercase tracking-wider text-fw-fog">{t}</span>
           </motion.div>
         ))}

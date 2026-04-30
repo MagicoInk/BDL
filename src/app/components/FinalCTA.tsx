@@ -1,9 +1,15 @@
 import { motion } from 'motion/react';
+import { frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 
 export function FinalCTA() {
   return (
-    <section id="contacto" className="scroll-mt-24 px-5 py-24 lg:px-10 lg:py-32">
-      <div className="mx-auto max-w-[1100px] text-center">
+    <section id="contacto" className="relative scroll-mt-24 overflow-hidden px-5 py-24 lg:px-10 lg:py-32">
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-25"
+        style={{ backgroundImage: `url(${frenchieByIndex(11, 2000)})` }}
+      />
+      <div className="absolute inset-0 bg-fw-bg/80" />
+      <div className="relative z-10 mx-auto max-w-[1100px] text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -18,8 +24,8 @@ export function FinalCTA() {
           viewport={{ once: true }}
           className="mx-auto mt-8 max-w-2xl text-sm leading-relaxed text-fw-muted md:text-base"
         >
-          Agenda una llamada o visita. Respondemos con el mismo rigor que pondrías en un proyecto arquitectónico: planos
-          claros, tiempos reales y cero sorpresas.
+          Agenda una llamada o una visita con calma. Te explicamos tiempos reales, cuidados del cachorro y lo que
+          incluye tu compra, sin presión: como cuando invitas a alguien a conocer tu casa.
         </motion.p>
         <motion.a
           href="https://wa.me/5215527294584?text=Hola,%20quiero%20agendar%20con%20Bulldog%20Lovers"
@@ -28,7 +34,7 @@ export function FinalCTA() {
           viewport={{ once: true }}
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.98 }}
-          className="mt-12 inline-flex rounded-full bg-fw-gold px-12 py-4 text-xs font-bold uppercase tracking-[0.22em] text-fw-bg transition-colors hover:bg-fw-white"
+          className="mt-12 inline-flex rounded-full border border-fw-red bg-fw-red px-12 py-4 text-xs font-bold uppercase tracking-[0.22em] text-fw-pure-white transition-colors hover:bg-fw-pure-white hover:text-fw-red"
         >
           Agendar ahora
         </motion.a>
@@ -36,3 +42,4 @@ export function FinalCTA() {
     </section>
   );
 }
+
