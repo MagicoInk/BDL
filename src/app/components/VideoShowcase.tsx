@@ -18,16 +18,16 @@ const clips = [
 
 export function VideoShowcase() {
   return (
-    <section id="videos" className="scroll-mt-24 border-y border-fw-border bg-fw-bg px-5 py-20 lg:px-10 lg:py-24">
-      <div className="mx-auto max-w-[1400px]">
+    <section id="videos" className="scroll-mt-24 border-y border-fw-border bg-fw-bg px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-24">
+      <div className="mx-auto min-w-0 max-w-[1400px]">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-12 max-w-2xl"
+          className="mb-10 max-w-2xl min-w-0 sm:mb-12"
         >
           <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-fw-red">En vídeo</p>
-          <h2 className="font-display text-3xl font-bold text-fw-white md:text-4xl">Momentos cotidianos</h2>
+          <h2 className="font-display text-2xl font-bold text-fw-white sm:text-3xl md:text-4xl">Momentos cotidianos</h2>
           <p className="mt-4 text-sm leading-relaxed text-fw-muted md:text-base">
             Vídeos cortos para que veas cómo se mueven y cómo están de ánimo. Si más adelante quieres subir los tuyos,
             lo vemos contigo.

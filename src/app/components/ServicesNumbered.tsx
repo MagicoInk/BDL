@@ -29,9 +29,9 @@ export function ServicesNumbered() {
   return (
     <section
       id="servicios"
-      className="border-b border-fw-border bg-fw-bg-soft px-5 py-20 pb-28 lg:px-10 lg:pb-24 lg:pt-28"
+      className="border-b border-fw-border bg-fw-bg-soft px-4 py-16 pb-24 sm:px-5 sm:py-20 sm:pb-28 lg:px-10 lg:pb-24 lg:pt-28"
     >
-      <div className="mx-auto max-w-[1400px]">
+      <div className="mx-auto min-w-0 max-w-[1400px]">
         {/* Cabecera alineada con la columna de texto (cols 3–12), hueco cols 1–2 = ancho del número) */}
         <header className={`${gridTemplate} mb-0 items-end border-b border-fw-border pb-10 lg:pb-12`}>
           <div className="hidden lg:col-span-2 lg:block" aria-hidden />

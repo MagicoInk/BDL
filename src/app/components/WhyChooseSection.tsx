@@ -27,8 +27,8 @@ export function WhyChooseSection() {
   };
 
   return (
-    <section className="border-b border-fw-border bg-fw-bg px-5 py-20 lg:px-10 lg:py-28">
-      <div className="mx-auto max-w-[1400px]">
+    <section className="border-b border-fw-border bg-fw-bg px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-28">
+      <div className="mx-auto min-w-0 max-w-[1400px]">
         <div className="mb-14 grid gap-10 md:grid-cols-3">
           {pillars.map((p, i) => (
             <motion.div
@@ -44,13 +44,13 @@ export function WhyChooseSection() {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
-          <div className="flex gap-2">
+        <div className="flex min-w-0 flex-col gap-4 sm:flex-row sm:items-center">
+          <div className="flex shrink-0 gap-2">
             <button
               type="button"
               aria-label="Anterior"
               onClick={() => scrollBy(-1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
+              className="flex h-11 w-11 touch-manipulation items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
             >
               <ChevronLeft size={20} />
             </button>
@@ -58,19 +58,19 @@ export function WhyChooseSection() {
               type="button"
               aria-label="Siguiente"
               onClick={() => scrollBy(1)}
-              className="flex h-11 w-11 items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
+              className="flex h-11 w-11 touch-manipulation items-center justify-center rounded-full border border-fw-border text-fw-fog transition-colors hover:border-fw-red hover:text-fw-red"
             >
               <ChevronRight size={20} />
             </button>
           </div>
           <div
             ref={scroller}
-            className="flex flex-1 gap-4 overflow-x-auto pb-2 scrollbar-hide [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+            className="scrollbar-hide flex min-h-0 min-w-0 flex-1 gap-3 overflow-x-auto overscroll-x-contain pb-2 [-ms-overflow-style:none] [scrollbar-width:none] sm:gap-4 [&::-webkit-scrollbar]:hidden"
           >
             {strip.map((src, i) => (
               <div
                 key={`${i}-${src.slice(-24)}`}
-                className="h-48 w-72 shrink-0 rounded-2xl bg-cover bg-center shadow-lg md:h-56 md:w-80"
+                className="h-48 w-[min(18rem,calc(100vw-2.5rem))] shrink-0 rounded-2xl bg-cover bg-center shadow-lg sm:w-72 md:h-56 md:w-80"
                 style={{ backgroundImage: `url(${src})` }}
               />
             ))}

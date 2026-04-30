@@ -16,7 +16,7 @@ import { FloatingSocial } from './components/FloatingSocial';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-fw-bg text-fw-white">
+    <div className="min-h-screen min-w-0 overflow-x-hidden bg-fw-bg text-fw-white">
       <SiteHeader />
       <HeroFourthWall />
       <IntroPhilosophy />

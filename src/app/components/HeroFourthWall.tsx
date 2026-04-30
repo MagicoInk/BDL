@@ -24,8 +24,8 @@ export function HeroFourthWall() {
       <div className="absolute inset-0 bg-gradient-to-b from-fw-bg/90 via-fw-bg/55 to-fw-bg/95" />
       <div className="absolute inset-0 bg-emerald-950/25 mix-blend-multiply" />
 
-      <div className="relative z-10 flex min-h-[100dvh] flex-col px-5 pb-10 pt-28 lg:px-10 lg:pb-14 lg:pt-32">
-        <div className="flex flex-1 flex-col items-center justify-center px-2 text-center">
+      <div className="relative z-10 flex min-h-[100dvh] min-w-0 flex-col px-4 pb-10 pt-[calc(7rem+env(safe-area-inset-top,0px))] sm:px-5 lg:px-10 lg:pb-14 lg:pt-[calc(8rem+env(safe-area-inset-top,0px))]">
+        <div className="flex min-w-0 flex-1 flex-col items-center justify-center px-1 text-center sm:px-2">
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
@@ -38,7 +38,7 @@ export function HeroFourthWall() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.05 }}
-            className="font-display text-[13vw] font-extrabold leading-[0.88] tracking-[-0.04em] text-white/40 sm:text-[11vw] md:text-[9vw] lg:text-[7.5rem] xl:text-[8.5rem]"
+            className="font-display text-[clamp(2.75rem,12vw,8.5rem)] font-extrabold leading-[0.88] tracking-[-0.04em] text-white/40 sm:text-[11vw] md:text-[9vw] lg:text-[7.5rem] xl:text-[8.5rem]"
             style={{ WebkitTextStroke: '1px rgba(255,255,255,0.2)' }}
           >
             BULLDOG
@@ -49,14 +49,14 @@ export function HeroFourthWall() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="mt-8 max-w-lg text-sm font-light leading-relaxed text-fw-fog md:text-base"
+            className="mt-8 max-w-lg text-pretty text-sm font-light leading-relaxed text-fw-fog md:text-base"
           >
             Líneas europeas, papeles en regla y seguimiento cuando lo necesites. Cada camada crece en un hogar
             tranquilo y limpio hasta el día en que te lo llevas.
           </motion.p>
         </div>
 
-        <div className="mx-auto grid w-full max-w-[1400px] gap-8 lg:grid-cols-3 lg:items-end lg:gap-6">
+        <div className="mx-auto grid w-full min-w-0 max-w-[1400px] gap-8 max-lg:max-w-full lg:grid-cols-3 lg:items-end lg:gap-6">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}

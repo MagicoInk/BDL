@@ -40,13 +40,13 @@ const items = [
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonios" className="border-b border-fw-border bg-fw-bg px-5 py-20 lg:px-10 lg:py-28">
-      <div className="mx-auto max-w-[1400px]">
+    <section id="testimonios" className="border-b border-fw-border bg-fw-bg px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-28">
+      <div className="mx-auto min-w-0 max-w-[1400px]">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-14 max-w-xl font-display text-3xl font-bold leading-tight text-fw-white md:text-4xl lg:text-5xl"
+          className="mb-14 max-w-xl text-pretty font-display text-2xl font-bold leading-tight text-fw-white sm:text-3xl md:text-4xl lg:text-5xl"
         >
           Comentarios de familias que ya se fueron a casa con su cachorro.
         </motion.h2>
@@ -65,18 +65,18 @@ export function TestimonialsSection() {
                 className="h-44 shrink-0 bg-cover bg-center lg:h-auto lg:w-2/5"
                 style={{ backgroundImage: `url(${t.img})` }}
               />
-              <div className="flex flex-1 flex-col p-8">
+              <div className="flex min-w-0 flex-1 flex-col p-5 sm:p-8">
                 <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-fw-red">{t.title}</p>
-                <p className="mt-4 flex-1 text-sm leading-relaxed text-fw-fog">&ldquo;{t.quote}&rdquo;</p>
-                <div className="mt-6 flex items-center justify-between border-t border-fw-border pt-6">
-                  <div className="flex items-center gap-3">
-                    <img src={t.avatar} alt="" className="h-11 w-11 rounded-full object-cover" />
-                    <div>
-                      <p className="text-sm font-semibold text-fw-white">{t.name}</p>
+                <p className="mt-4 flex-1 text-pretty text-sm leading-relaxed text-fw-fog">&ldquo;{t.quote}&rdquo;</p>
+                <div className="mt-6 flex flex-col gap-4 border-t border-fw-border pt-6 sm:flex-row sm:items-center sm:justify-between">
+                  <div className="flex min-w-0 items-center gap-3">
+                    <img src={t.avatar} alt="" className="h-11 w-11 shrink-0 rounded-full object-cover" />
+                    <div className="min-w-0">
+                      <p className="break-words text-sm font-semibold text-fw-white">{t.name}</p>
                       <p className="text-xs text-fw-muted">{t.place}</p>
                     </div>
                   </div>
-                  <div className="flex text-fw-red">
+                  <div className="flex shrink-0 text-fw-red">
                     {[1, 2, 3, 4, 5].map((s) => (
                       <Star key={s} size={14} className="fill-fw-red" />
                     ))}

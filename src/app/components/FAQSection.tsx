@@ -32,8 +32,8 @@ const faqs = [
 
 export function FAQSection() {
   return (
-    <section id="faq" className="bg-fw-bg-soft px-5 py-20 lg:px-10 lg:py-28">
-      <div className="mx-auto max-w-3xl">
+    <section id="faq" className="bg-fw-bg-soft px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-28">
+      <div className="mx-auto min-w-0 max-w-3xl">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -51,7 +51,7 @@ export function FAQSection() {
               value={`item-${idx}`}
               className="border-0 border-b border-fw-border bg-transparent px-0"
             >
-              <AccordionTrigger className="py-5 text-left text-base font-semibold text-fw-fog hover:no-underline hover:text-fw-red data-[state=open]:text-fw-red">
+              <AccordionTrigger className="touch-manipulation break-words py-5 pr-2 text-left text-base font-semibold text-fw-fog hover:no-underline hover:text-fw-red data-[state=open]:text-fw-red">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="pb-5 text-sm leading-relaxed text-fw-muted">{faq.answer}</AccordionContent>
@@ -67,7 +67,7 @@ export function FAQSection() {
         >
           <a
             href="https://wa.me/5215527294584?text=Tengo%20más%20preguntas"
-            className="inline-flex rounded-full border border-fw-red bg-fw-red px-8 py-3 text-xs font-bold uppercase tracking-[0.2em] text-fw-pure-white transition-colors hover:bg-fw-pure-white hover:text-fw-red"
+            className="inline-flex touch-manipulation rounded-full border border-fw-red bg-fw-red px-8 py-3 text-xs font-bold uppercase tracking-[0.2em] text-fw-pure-white transition-colors hover:bg-fw-pure-white hover:text-fw-red"
           >
             Escribir por WhatsApp
           </a>

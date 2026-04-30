@@ -27,8 +27,11 @@
 }
 
 @layer base {
+  html {
+    overflow-x: clip;
+  }
   body {
     font-family: var(--font-family-sans);
-    @apply bg-fw-bg text-fw-white antialiased;
+    @apply min-w-0 bg-fw-bg text-fw-white antialiased;
   }
 }

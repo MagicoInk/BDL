@@ -2,8 +2,8 @@ import { MapPin, Phone, Mail, Clock, Instagram, Facebook, Youtube } from 'lucide
 
 export function PremiumFooter() {
   return (
-    <footer className="border-t border-fw-border bg-fw-bg px-5 py-16 lg:px-10 lg:py-20">
-      <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
+    <footer className="border-t border-fw-border bg-fw-bg px-4 py-14 sm:px-5 sm:py-16 lg:px-10 lg:py-20">
+      <div className="mx-auto grid min-w-0 max-w-[1400px] gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-10">
         <div>
           <p className="mb-3 text-[10px] font-bold uppercase tracking-[0.25em] text-fw-red">Contacto</p>
           <ul className="space-y-4 text-sm text-fw-muted">
@@ -81,7 +81,7 @@ export function PremiumFooter() {
         </div>
       </div>
 
-      <div className="mx-auto mt-14 max-w-[1400px] border-t border-fw-border pt-8 text-center text-xs text-fw-muted">
+      <div className="mx-auto mt-12 max-w-[1400px] border-t border-fw-border px-2 pb-[max(5rem,env(safe-area-inset-bottom,0px)+3rem)] pt-8 text-center text-xs leading-relaxed text-fw-muted sm:mt-14">
         © {new Date().getFullYear()} Bulldog Lovers México · FCI · Federación Canófila Mexicana
       </div>
     </footer>

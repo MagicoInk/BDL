@@ -46,11 +46,11 @@ export function BreedsPortfolio() {
   const cards = lineCards[cat] ?? lineCards[0];
 
   return (
-    <section id="lineas" className="bg-fw-bg-soft px-5 py-20 lg:px-10 lg:py-28">
-      <div className="mx-auto flex max-w-[1400px] flex-col gap-12 lg:flex-row lg:gap-16">
-        <aside className="shrink-0 lg:w-52">
-          <p className="mb-6 text-[11px] font-semibold uppercase tracking-[0.3em] text-fw-red">Nuestras líneas</p>
-          <nav className="flex flex-row gap-2 overflow-x-auto lg:flex-col lg:overflow-visible">
+    <section id="lineas" className="bg-fw-bg-soft px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-28">
+      <div className="mx-auto flex min-w-0 max-w-[1400px] flex-col gap-10 lg:flex-row lg:gap-16">
+        <aside className="min-w-0 shrink-0 lg:w-52">
+          <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-fw-red sm:mb-6">Nuestras líneas</p>
+          <nav className="-mx-1 flex flex-row gap-2 overflow-x-auto px-1 pb-1 [-webkit-overflow-scrolling:touch] lg:flex-col lg:overflow-visible lg:px-0 lg:pb-0">
             {categories.map((c, i) => (
               <button
                 key={c}
@@ -106,10 +106,10 @@ export function BreedsPortfolio() {
         </div>
       </div>
 
-      <div id="cachorros" className="mx-auto mt-16 max-w-[1400px] scroll-mt-28 text-center">
+      <div id="cachorros" className="mx-auto mt-12 max-w-[1400px] scroll-mt-28 px-2 text-center sm:mt-16 sm:px-0">
         <a
           href="https://wa.me/5215527294584?text=Quiero%20ver%20cachorros%20disponibles"
-          className="inline-flex rounded-full border border-fw-red bg-fw-red px-8 py-3 text-xs font-bold uppercase tracking-[0.2em] text-fw-pure-white transition-colors hover:bg-transparent hover:text-fw-red"
+          className="inline-flex w-full max-w-md touch-manipulation justify-center rounded-full border border-fw-red bg-fw-red px-6 py-3.5 text-xs font-bold uppercase tracking-[0.2em] text-fw-pure-white transition-colors hover:bg-transparent hover:text-fw-red sm:w-auto sm:px-8"
         >
           Ver disponibilidad actual
         </a>
