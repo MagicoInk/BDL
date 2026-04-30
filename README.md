@@ -1,11 +1,31 @@
+# Landing Page para Cachorros
 
-  # Landing Page para Cachorros
+Proyecto **Vite + React + Tailwind CSS v4** (Bulldog Lovers, estilo FourthWall).
 
-  This is a code bundle for Landing Page para Cachorros. The original project is available at https://www.figma.com/design/JiXtpBbVFA3Gx1Ck1YnX2K/Landing-Page-para-Cachorros.
+## Desarrollo
 
-  ## Running the code
+```bash
+npm install
+npm run dev
+```
 
-  Run `npm i` to install the dependencies.
+## Build local
 
-  Run `npm run dev` to start the development server.
-  
+```bash
+npm run build
+npm run preview
+```
+
+## Deploy en Vercel (repo [MagicoInk/BDL](https://github.com/MagicoInk/BDL))
+
+1. En [vercel.com](https://vercel.com), **Add New Project** → importa el repositorio **BDL**.
+2. Vercel detecta **Vite**; no hace falta cambiar el output: **`dist`** (ya definido en `vercel.json`).
+3. **Framework Preset:** Vite · **Build Command:** `npm run build` · **Install:** `npm install`.
+4. **Node:** 20.x o superior (ver `engines` en `package.json`).
+5. Pulsa **Deploy**.
+
+`vercel.json` incluye rewrites SPA por si más adelante añades rutas con React Router. Los assets de `/assets/*` se sirven con normalidad.
+
+---
+
+Diseño original en Figma: [Landing Page para Cachorros](https://www.figma.com/design/JiXtpBbVFA3Gx1Ck1YnX2K/Landing-Page-para-Cachorros).
