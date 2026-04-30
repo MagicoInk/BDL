@@ -1,0 +1,29 @@
+@import 'tailwindcss' source(none);
+@source '../**/*.{js,ts,jsx,tsx}';
+
+@import 'tw-animate-css';
+
+@theme {
+  --font-family-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-family-display: 'Syne', 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-family-serif: 'Playfair Display', Georgia, serif;
+
+  /* FourthWall / Behance — verde bosque profundo + acento oro */
+  --color-fw-bg: #0a1414;
+  --color-fw-bg-soft: #0d1a1a;
+  --color-fw-surface: #111f1f;
+  --color-fw-elevated: #162828;
+  --color-fw-border: rgba(255, 255, 255, 0.08);
+  --color-fw-muted: #8fa3a1;
+  --color-fw-fog: #c5d4d1;
+  --color-fw-white: #f2f7f6;
+  --color-fw-gold: #c9a55c;
+  --color-fw-gold-dim: #9e7d3e;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-family-sans);
+    @apply bg-fw-bg text-fw-white antialiased;
+  }
+}
