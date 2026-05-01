@@ -14,18 +14,17 @@ export function FinalCTA() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-pretty font-display text-2xl font-bold leading-[1.2] tracking-tight text-fw-white sm:text-3xl md:text-5xl lg:text-6xl"
+          className="font-display text-2xl font-bold leading-tight text-fw-white sm:text-3xl md:text-4xl"
         >
-          ¿Quieres platicar con nosotros?
+          ¿Hablamos?
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mx-auto mt-6 max-w-2xl text-pretty text-sm leading-relaxed text-fw-muted sm:mt-8 md:text-base"
+          className="mx-auto mt-5 max-w-md text-sm leading-snug text-fw-muted sm:mt-6"
         >
-          Mándanos un WhatsApp o pide una visita con cita. Te decimos qué cachorros hay, cuándo estarían listos y qué
-          trae incluido el precio, sin meterte prisa.
+          WhatsApp o visita con cita.
         </motion.p>
         <motion.a
           href="https://wa.me/5215527294584?text=Hola,%20quiero%20agendar%20con%20Bulldog%20Lovers"
@@ -36,7 +35,7 @@ export function FinalCTA() {
           whileTap={{ scale: 0.98 }}
           className="mt-10 inline-flex w-full max-w-xs touch-manipulation justify-center rounded-full border border-fw-red bg-fw-red px-8 py-4 text-xs font-bold uppercase tracking-[0.18em] text-fw-pure-white transition-colors hover:bg-fw-pure-white hover:text-fw-red sm:mt-12 sm:w-auto sm:max-w-none sm:px-12 sm:tracking-[0.22em]"
         >
-          Agendar ahora
+          Escribir
         </motion.a>
       </div>
     </section>

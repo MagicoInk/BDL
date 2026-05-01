@@ -30,10 +30,7 @@ export function PremiumFooter() {
           <div className="font-display text-xl font-bold text-fw-white">
             Bulldog<span className="text-fw-red">Lovers</span>
           </div>
-          <p className="mt-4 max-w-xs text-sm leading-relaxed text-fw-muted">
-            Criamos bulldog francés con tiempo y limpieza. Si nos escribes, te contestamos; cuando te llevas al cachorro,
-            el trato no se corta ahí.
-          </p>
+          <p className="mt-4 max-w-xs text-sm leading-snug text-fw-muted">Bulldog francés · CDMX · Respuesta por WhatsApp.</p>
         </div>
 
         <div>

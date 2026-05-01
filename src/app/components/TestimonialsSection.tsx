@@ -5,8 +5,7 @@ import { frenchie, frenchieByIndex } from '@/app/media/frenchBulldogMedia';
 const items = [
   {
     title: 'Luna — blue',
-    quote:
-      'Nos mandaron fotos cada semana. A los dos años todavía les escribo por la comida y me contestan al día.',
+    quote: 'Fotos cada semana y siguen contestando al día, dos años después.',
     name: 'María González',
     place: 'México',
     img: frenchieByIndex(2, 900),
@@ -14,41 +13,25 @@ const items = [
   },
   {
     title: 'Max — lilac',
-    quote: 'Es el tercer perro que sacamos aquí. Se nota que conocen a sus animales y no andan con vueltas.',
+    quote: 'Tercer perro con ellos. Conocen a sus animales y no dan vueltas.',
     name: 'Carlos Rodríguez',
     place: 'Monterrey',
     img: frenchieByIndex(4, 900),
     avatar: frenchie.face2,
   },
-  {
-    title: 'Thor — merle',
-    quote: 'Vimos a los papás, revisamos papeles en la mesa y la entrega fue sin correr. Así da gusto.',
-    name: 'Andrea Martínez',
-    place: 'Guadalajara',
-    img: frenchieByIndex(6, 900),
-    avatar: frenchie.face3,
-  },
-  {
-    title: 'Nala — isabella',
-    quote: 'El contrato estaba claro y la garantía nos quitó el miedo de primerizos con un cachorro caro.',
-    name: 'Lucía Herrera',
-    place: 'Querétaro',
-    img: frenchieByIndex(8, 900),
-    avatar: frenchie.face4,
-  },
 ];
 
 export function TestimonialsSection() {
   return (
-    <section id="testimonios" className="border-b border-fw-border bg-fw-bg px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-28">
+    <section id="testimonios" className="border-b border-fw-border bg-fw-bg px-4 py-14 sm:px-5 sm:py-16 lg:px-10 lg:py-20">
       <div className="mx-auto min-w-0 max-w-[1400px]">
         <motion.h2
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-14 max-w-xl text-pretty font-display text-2xl font-bold leading-tight text-fw-white sm:text-3xl md:text-4xl lg:text-5xl"
+          className="mb-8 max-w-xl font-display text-xl font-bold text-fw-white sm:mb-10 sm:text-2xl"
         >
-          Comentarios de familias que ya se fueron a casa con su cachorro.
+          Testimonios
         </motion.h2>
 
         <div className="grid gap-6 md:grid-cols-2">
@@ -62,15 +45,15 @@ export function TestimonialsSection() {
               className="flex flex-col overflow-hidden rounded-2xl border border-white/12 bg-fw-surface lg:flex-row"
             >
               <div
-                className="h-44 shrink-0 bg-cover bg-center lg:h-auto lg:w-2/5"
+                className="h-40 shrink-0 bg-cover bg-center sm:h-44 lg:h-auto lg:w-2/5"
                 style={{ backgroundImage: `url(${t.img})` }}
               />
-              <div className="flex min-w-0 flex-1 flex-col p-5 sm:p-8">
+              <div className="flex min-w-0 flex-1 flex-col p-5 sm:p-6">
                 <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-fw-red">{t.title}</p>
-                <p className="mt-4 flex-1 text-pretty text-sm leading-relaxed text-fw-fog">&ldquo;{t.quote}&rdquo;</p>
-                <div className="mt-6 flex flex-col gap-4 border-t border-fw-border pt-6 sm:flex-row sm:items-center sm:justify-between">
+                <p className="mt-3 flex-1 text-pretty text-sm leading-relaxed text-fw-fog">&ldquo;{t.quote}&rdquo;</p>
+                <div className="mt-5 flex flex-col gap-3 border-t border-fw-border pt-5 sm:flex-row sm:items-center sm:justify-between">
                   <div className="flex min-w-0 items-center gap-3">
-                    <img src={t.avatar} alt="" className="h-11 w-11 shrink-0 rounded-full object-cover" />
+                    <img src={t.avatar} alt="" className="h-10 w-10 shrink-0 rounded-full object-cover" />
                     <div className="min-w-0">
                       <p className="break-words text-sm font-semibold text-fw-white">{t.name}</p>
                       <p className="text-xs text-fw-muted">{t.place}</p>

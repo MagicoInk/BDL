@@ -2,15 +2,15 @@ import { motion } from 'motion/react';
 import { Shield, Heart, FileCheck, Headphones } from 'lucide-react';
 
 const items = [
-  { Icon: Shield, t: 'Genética 2 años' },
-  { Icon: Heart, t: 'Salud certificada' },
-  { Icon: FileCheck, t: 'Contrato legal' },
-  { Icon: Headphones, t: 'Soporte vitalicio' },
+  { Icon: Shield, t: 'Garantía 2 años' },
+  { Icon: Heart, t: 'Salud' },
+  { Icon: FileCheck, t: 'Contrato' },
+  { Icon: Headphones, t: 'Soporte' },
 ];
 
 export function GuaranteesStrip() {
   return (
-    <section className="border-b border-fw-border bg-fw-elevated px-4 py-8 sm:px-5 sm:py-10 lg:px-10">
+    <section className="border-b border-fw-border bg-fw-elevated px-4 py-6 sm:px-5 sm:py-8 lg:px-10">
       <div className="mx-auto grid min-w-0 max-w-[1400px] grid-cols-2 gap-3 sm:gap-6 md:grid-cols-4 md:gap-4">
         {items.map(({ Icon, t }, i) => (
           <motion.div

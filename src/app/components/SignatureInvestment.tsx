@@ -2,15 +2,15 @@ import { motion } from 'motion/react';
 import { frenchie } from '@/app/media/frenchBulldogMedia';
 
 const tiers = [
-  { label: 'Lo más selecto', range: '$130k — $150k MXN', note: 'Exóticos muy buscados' },
-  { label: 'Gama alta', range: '$110k — $130k MXN', note: 'Blue y lilac elegidos con tiempo' },
-  { label: 'Gama media-alta', range: '$95k — $110k MXN', note: 'Genética con respaldo FCI' },
-  { label: 'Punto de partida', range: '$80k — $95k MXN', note: 'Primera entrada a nuestras líneas' },
+  { label: 'Selecto', range: '$130k — $150k', note: 'Exótico' },
+  { label: 'Alta', range: '$110k — $130k', note: 'Blue / lilac' },
+  { label: 'Media-alta', range: '$95k — $110k', note: 'FCI' },
+  { label: 'Entrada', range: '$80k — $95k', note: 'Línea base' },
 ];
 
 export function SignatureInvestment() {
   return (
-    <section className="relative overflow-hidden px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-28">
+    <section id="precios" className="scroll-mt-24 relative overflow-hidden px-4 py-16 sm:px-5 sm:py-20 lg:px-10 lg:py-28">
       <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${frenchie.signatureBg})` }} />
       <div className="absolute inset-0 bg-fw-bg/88" />
       <div className="absolute inset-0 bg-gradient-to-r from-fw-bg via-fw-bg/70 to-transparent" />
@@ -22,13 +22,12 @@ export function SignatureInvestment() {
           viewport={{ once: true }}
           className="min-w-0"
         >
-          <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-fw-red">Inversión</p>
-          <h2 className="text-pretty font-display text-2xl font-bold leading-tight text-fw-white sm:text-3xl md:text-4xl lg:text-5xl">
-            Los precios cambian según la camada.
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-fw-red">Precios</p>
+          <h2 className="text-pretty font-display text-2xl font-bold leading-tight text-fw-white sm:text-3xl md:text-4xl">
+            Orientativos en MXN.
           </h2>
-          <p className="mt-6 max-w-md text-pretty text-sm leading-relaxed text-fw-muted">
-            La tabla es orientativa: al final cuenta el color, el sexo y si todavía hay cachorros. Platicamos el total
-            por WhatsApp o en la visita, con calma y sin obligarte a decidir en el momento.
+          <p className="mt-4 max-w-sm text-pretty text-sm leading-snug text-fw-muted">
+            Color, sexo y disponibilidad marcan el total. Te lo decimos por WhatsApp o en visita.
           </p>
         </motion.div>
 
@@ -47,7 +46,9 @@ export function SignatureInvestment() {
                 <p className="font-display text-base font-bold text-fw-white sm:text-lg">{t.label}</p>
                 <p className="mt-0.5 text-xs leading-snug text-fw-muted">{t.note}</p>
               </div>
-              <p className="shrink-0 font-display text-sm font-bold text-fw-red sm:text-base md:text-right">{t.range}</p>
+              <p className="shrink-0 font-display text-sm font-bold text-fw-red sm:text-base md:text-right">
+                {t.range} MXN
+              </p>
             </li>
           ))}
         </motion.ul>

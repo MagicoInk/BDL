@@ -4,9 +4,7 @@ import { Menu, X, Instagram, Facebook } from 'lucide-react';
 
 const nav = [
   { href: '#nosotros', label: 'Nosotros' },
-  { href: '#servicios', label: 'Servicios' },
-  { href: '#videos', label: 'Vídeos' },
-  { href: '#lineas', label: 'Líneas' },
+  { href: '#precios', label: 'Precios' },
   { href: '#testimonios', label: 'Testimonios' },
   { href: '#faq', label: 'FAQ' },
   { href: '#contacto', label: 'Contacto' },

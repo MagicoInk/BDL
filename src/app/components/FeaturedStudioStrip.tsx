@@ -29,13 +29,11 @@ export function FeaturedStudioStrip() {
               viewport={{ once: true }}
               className="max-w-xl min-w-0 px-1"
             >
-              <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.35em] text-fw-red">
-                Nuestro espacio
-              </p>
-              <h3 className="font-display text-2xl font-bold leading-tight text-fw-white sm:text-3xl md:text-5xl">
-                Así es nuestro hogar
+              <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.35em] text-fw-red">Hogar</p>
+              <h3 className="font-display text-2xl font-bold leading-tight text-fw-white sm:text-3xl md:text-4xl">
+                Dónde crecen
               </h3>
-              <div className="mt-4 inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-fw-border bg-fw-surface/70 px-3 py-2 backdrop-blur sm:mt-6 sm:gap-3 sm:px-4">
+              <div className="mt-3 inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-fw-border bg-fw-surface/70 px-3 py-2 backdrop-blur sm:mt-5 sm:gap-3 sm:px-4">
                 <div className="flex -space-x-2">
                   {avatarUrls.map((src) => (
                     <img
@@ -46,7 +44,7 @@ export function FeaturedStudioStrip() {
                     />
                   ))}
                 </div>
-                <span className="text-xs font-medium text-fw-fog">Familias que confían</span>
+                <span className="text-xs font-medium text-fw-fog">+500 familias</span>
                 <div className="flex text-fw-red">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} size={14} className="fill-fw-red" />
