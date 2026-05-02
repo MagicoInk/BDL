@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Menu, X, Instagram, Facebook } from 'lucide-react';
 
 const nav = [
+  { href: '#ejemplares', label: 'Ejemplares' },
   { href: '#nosotros', label: 'Nosotros' },
   { href: '#precios', label: 'Precios' },
   { href: '#testimonios', label: 'Testimonios' },

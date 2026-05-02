@@ -1,6 +1,6 @@
 import { SiteHeader } from './components/SiteHeader';
 import { HeroFourthWall } from './components/HeroFourthWall';
-import { FeaturedStudioStrip } from './components/FeaturedStudioStrip';
+import { EjemplaresDisponibles } from './components/EjemplaresDisponibles';
 import { GuaranteesStrip } from './components/GuaranteesStrip';
 import { IntroPhilosophy } from './components/IntroPhilosophy';
 import { WhyChooseSection } from './components/WhyChooseSection';
@@ -16,7 +16,7 @@ export default function App() {
     <div className="min-h-screen min-w-0 overflow-x-hidden bg-fw-bg text-fw-white">
       <SiteHeader />
       <HeroFourthWall />
-      <FeaturedStudioStrip />
+      <EjemplaresDisponibles />
       <GuaranteesStrip />
       <IntroPhilosophy />
       <WhyChooseSection />
