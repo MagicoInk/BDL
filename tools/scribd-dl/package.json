@@ -1,16 +1,44 @@
 {
   "name": "scribd-dl",
+  "productName": "Scribd a PDF",
   "private": true,
   "version": "1.0.0",
   "description": "Guarda como PDF las páginas públicas de un documento de Scribd",
+  "author": "Magico Ink",
   "type": "module",
+  "main": "app/main.mjs",
   "bin": { "scribd-dl": "./scribd-dl.mjs" },
   "scripts": {
-    "start": "node scribd-dl.mjs",
-    "test": "node --test"
+    "gui": "electron .",
+    "cli": "node scribd-dl.mjs",
+    "test": "node --test",
+    "dist:win": "electron-builder --win nsis --x64 --publish never"
   },
-  "engines": { "node": ">=18" },
-  "dependencies": {
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
     "playwright": "^1.47.0"
+  },
+  "build": {
+    "appId": "ink.magico.scribd-dl",
+    "productName": "Scribd a PDF",
+    "files": ["app/**", "lib/**", "package.json"],
+    "directories": { "output": "dist", "buildResources": "build" },
+    "win": {
+      "target": [{ "target": "nsis", "arch": ["x64"] }],
+      "icon": "build/icon.png",
+      "artifactName": "Scribd-a-PDF-Setup-${version}.exe"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Scribd a PDF",
+      "language": "3082",
+      "installerLanguages": ["es_ES"]
+    }
   }
 }

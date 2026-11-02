@@ -1,0 +1,40 @@
+:root {
+  --bg: #f6f5f2; --surface: #fff; --text: #1d1d1b; --muted: #6b6a66; --line: #dcdad4;
+  --accent: #1f6f5c; --accent-text: #fff; --ok: #1f6f5c; --err: #b3261e; --run: #8a5a00;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #1b1b1a; --surface: #242423; --text: #ecebe7; --muted: #a3a29c; --line: #3a3a37;
+    --accent: #4fb39a; --accent-text: #0e1a17; --ok: #4fb39a; --err: #f2867d; --run: #e5b45c; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 14px/1.45 "Segoe UI", system-ui, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 24px; display: flex; flex-direction: column; gap: 8px; }
+h1 { margin: 0; font-size: 22px; }
+header p, footer { color: var(--muted); margin: 4px 0 8px; }
+footer { font-size: 12px; margin-top: 12px; }
+label { font-weight: 600; margin-top: 8px; }
+textarea, input { width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px;
+  background: var(--surface); color: var(--text); font: inherit; }
+textarea { resize: vertical; font-family: Consolas, ui-monospace, monospace; font-size: 13px; }
+.row { display: flex; gap: 8px; align-items: center; }
+.row input { flex: 1; }
+.actions { margin-top: 12px; }
+button { padding: 8px 16px; border-radius: 6px; border: 1px solid var(--accent); cursor: pointer;
+  background: var(--accent); color: var(--accent-text); font: inherit; font-weight: 600; white-space: nowrap; }
+button.secondary { background: transparent; color: var(--text); border-color: var(--line); font-weight: 400; }
+button:disabled { opacity: .5; cursor: default; }
+#summary { color: var(--muted); }
+#jobs { list-style: none; padding: 0; margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px; }
+.job { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+.top { display: flex; gap: 8px; align-items: center; min-width: 0; }
+.url { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); }
+.badge { font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 99px; border: 1px solid currentColor; flex: none; }
+.bar { height: 4px; background: var(--line); border-radius: 2px; margin: 8px 0 6px; overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--run); transition: width .2s; }
+.detail { font-size: 13px; }
+.detail a { color: var(--accent); }
+.abriendo .badge, .cargando .badge, .generando .badge { color: var(--run); }
+.listo .badge { color: var(--ok); } .listo .bar i { background: var(--ok); }
+.error .badge, .error .detail { color: var(--err); } .error .bar i { background: var(--err); }
