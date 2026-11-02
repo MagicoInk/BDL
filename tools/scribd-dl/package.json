@@ -1,0 +1,16 @@
+{
+  "name": "scribd-dl",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Guarda como PDF las páginas públicas de un documento de Scribd",
+  "type": "module",
+  "bin": { "scribd-dl": "./scribd-dl.mjs" },
+  "scripts": {
+    "start": "node scribd-dl.mjs",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "playwright": "^1.47.0"
+  }
+}
